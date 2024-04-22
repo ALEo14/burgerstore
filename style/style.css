@@ -6,7 +6,7 @@
 }
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #FFC82C;
     height: 80px;
     align-items: center;
@@ -21,11 +21,13 @@ header{
 .logo img{
     height: 50px;
     margin: 10px;
+    padding-left: 30px;
 }
 .lista ul {
     display: flex;
     text-decoration: none;
     list-style: none;
+    padding: 25px;
     
 }
 
@@ -37,15 +39,25 @@ header{
 }
 /* index */
 
-.foto img {
-    width: 100%;
+.foto{
+    display: flex;
+    height: 600px;
+    background-image: url("/fotos/descarga.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-content: flex-end;
 }
-.imagen{
-    width: 100%;
+.foto p {
+    color: azure;
+    padding: 150px;
+    
 }
 .contenedor-pagos{
     display: flex;
-    padding-left:350px;
+    padding:50px;
+    justify-content: center;
 }
 .pagos {   
     border: 2px solid #000;
