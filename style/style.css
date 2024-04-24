@@ -24,6 +24,7 @@ header{
     padding-left: 30px;
 }
 .lista ul {
+    
     text-decoration: none;
     list-style: none;
 }
@@ -47,8 +48,10 @@ header{
     justify-content: flex-end;
 }
 .foto p {
-    color: azure;
+    color: #FFC82C;
     padding: 150px;
+    font-size: 30px;
+    text-decoration: underline;
     
 }
 .contenedor-pagos{
@@ -76,6 +79,39 @@ footer h5 {
     padding: 15px;
 }
 
+/* carousel */
+.carousel-inner{
+    width: 100%;
+    height: 1200px;
+    padding: 10px;
+    
+}
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+    
+    object-fit: cover ;
+}
+.infoburger{
+    
+    width: 150px;
+    display: flex;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.infoburger h5{
+ color: #FFC82C;
+ font-size: 50px;
+}
+.infoburger:hover h5 {
+    color: #000;
+}
+.infoburger:hover {
+    transform: scale(1.1);
+    background-color: rgba(227, 213, 11, 0.601);
+    color: black;
+
+}
 
 /* burgers  */
 
