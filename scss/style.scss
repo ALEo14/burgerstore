@@ -1,9 +1,11 @@
 @import 'base/vars';
 @import 'base/reset';
+@import 'base/utilities';
 
 @import 'components/navbar';
 
 @import 'layout/burger';
+@import 'layout/index';
 /* index */
 
 .foto{
@@ -81,9 +83,6 @@ footer h5 {
     color: black;
 
 }
-
-/* burgers  */
-
 
 
 /* ubicaion */

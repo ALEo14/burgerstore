@@ -1,0 +1,22 @@
+@mixin flex( $direction , $aling , $justify , $gap){
+    display: flex;
+    flex-direction: $direction ;
+    align-items: $aling ;
+    justify-content: $justify;
+    gap: $gap;
+}
+@mixin imagenes ($width, $height){
+    width: $width;
+    height: $height;
+    object-fit: cover ;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+p,a{
+    text-decoration: none ;
+
+}
+ul{
+    list-style-type: none ;
+}

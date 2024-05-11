@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+p, a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 header {
   background-color: #ffc82c;
   min-height: 80px;
@@ -83,11 +95,67 @@ header {
 }
 .product-body h2 {
   font-size: 40px;
-  font-family: "Courier New", Courier, monospace;
 }
 .product-body p {
   gap: 40px;
   font-family: cursive;
+}
+
+.hero {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7450980392), rgba(0, 0, 0, 0.6235294118)), url(../fotos/descarga.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  min-width: 100vh;
+  max-height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 13px;
+}
+.hero h1 {
+  color: #FFC82C;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.gallery {
+  padding: 15px;
+}
+
+.gallery-combos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.gallery-combos img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-combos .gallery-items {
+  position: relative;
+  transition: 0.5s;
+}
+.gallery-combos .gallery-items:hover .gallery-text {
+  transform: scale(1);
+}
+.gallery-combos .gallery-text {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.667);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  color: antiquewhite;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transform: scale(0);
 }
 
 /* index */
@@ -170,7 +238,6 @@ footer h5 {
   color: black;
 }
 
-/* burgers  */
 /* ubicaion */
 .ubicacion {
   width: 50vh;
