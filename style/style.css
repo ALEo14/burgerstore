@@ -5,20 +5,19 @@
 }
 
 header {
-  
-  background-color: #FFC82C;
+  background-color: #ffc82c;
   min-height: 80px;
   align-items: center;
   padding: 10px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo img {
   height: 50px;
   margin: 10px;
@@ -29,8 +28,7 @@ header {
   text-decoration: none;
   list-style: none;
 }
-
-.lista a {
+.lista ul a {
   text-decoration: none;
   color: #000;
   padding: 20px;
@@ -40,7 +38,7 @@ header {
 .foto {
   display: flex;
   height: 600px;
-  background-image: url("../fotos/descarga.jpg");
+  background-image: url("/fotos/descarga.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
