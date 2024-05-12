@@ -1,14 +1,17 @@
 .hero{
-    background: linear-gradient(45deg,#000000be,#0000009f),url(../fotos/descarga.jpg);
+    background: linear-gradient(45deg,#000000be,#0000009f),url(../fotos/hero.jpg);
     background-size: cover;
     width: 100%;
-    height: 650px;
+    height: 90vh;
     min-width: 100vh;
     max-height: 100%;
     padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
     @include flex(column,flex-end, center,13px );
     h1{
-        color: $main-color;
+        color: $font-color;
         text-decoration:underline;
         font-size: 2rem;
     }
@@ -22,8 +25,8 @@
     
 }.gallery-combos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px,2fr));
+    gap:30px;
     img{
         width: 100%;
         height: 100%;
@@ -41,12 +44,15 @@
         position: absolute;
         top: 0;
         background-color: rgba(0, 0, 0, 0.667);
-        @include flex(column, flex-start,center,10px);
+        @include flex(column,center,end,10px);
         color: antiquewhite;
         padding: 20px;
         width: 100%;
         height: 100%;
         transition: 0.5s;
         transform: scale(0);
+
+        
     }
 }
+

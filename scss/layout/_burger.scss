@@ -16,7 +16,7 @@
         box-shadow: 5px, 5px, 20px rgb(0,0,0,0.4);
     }
     img{
-        @include imagenes (100%,350px);
+        @include imagenes (100%,350px,cover);
         transition: all .5s;
     &:hover{
         transform: scale(1.2);

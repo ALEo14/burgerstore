@@ -1,0 +1,64 @@
+.footer{
+    width: 100%;
+    background-color: $main-color;
+
+    .grupo1{
+        width: 100%;
+        max-width: 1200px;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:50px;
+        padding: 45px 0px;
+        .box{
+            width: 100%;
+            height: 10vh;
+            @include flex(column, center, center , 10px);
+            h2{
+                color: $font-color;
+            } 
+                img{
+                @include imagenes(50px,50px,cover);
+            }
+        }
+        .redes a{
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: $font-color;
+            margin-right: 10px;
+            background-color: #0d2033;
+            text-align: center;
+            transition: all 300ms ease;
+            &:hover{
+                color: blueviolet;
+            }
+        }
+        
+    }
+    .grupo1{
+        background-color: $second-color;
+        padding: 15px 10px;
+        text-align: center;
+        color: $font-color;
+
+        small{
+            font-size: 15px;
+        }
+
+    }
+}
+@media screen and (max-width:880px) {
+    .footer{
+
+        .grupo1{
+            width:90%;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap:30px;
+            padding: 35px,0px;
+
+        }
+    }
+    
+}
