@@ -12,7 +12,7 @@
 }
 .clase{
     @include flex (column , center , center , 10px);
-    
+    flex-wrap: wrap;
 }
 .mapa img {
     width: 100%;
