@@ -11,8 +11,10 @@
     text-decoration: line-through;}
 }
 .clase{
-    display: flex;
+    @include flex (column , center , center , 10px);
 }
 .mapa img {
-    padding: 15px;
+    width: 100%;
+    padding: 20px;
+    object-fit: cover;
 }

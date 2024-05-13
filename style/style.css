@@ -6,6 +6,7 @@
 
 h1 {
   font-size: 3.5em;
+  font-family: "Montserrat", sans-serif;
 }
 
 h2 {
@@ -20,6 +21,7 @@ h3 {
 p, a {
   font-size: 1.25em;
   text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
 }
 
 ul {
@@ -225,7 +227,7 @@ footer .redes a i {
   transition: 0.7s;
 }
 .card-content:hover {
-  height: 60%;
+  height: 70%;
   transition: 1.7s;
 }
 .card-content h2 {
@@ -265,10 +267,16 @@ footer .redes a i {
 
 .clase {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .mapa img {
-  padding: 15px;
+  width: 100%;
+  padding: 20px;
+  object-fit: cover;
 }
 
 .contacto {
@@ -286,6 +294,7 @@ footer .redes a i {
   text-decoration: none;
   color: black;
   text-align: center;
+  gap: 50px;
 }
 
 .caja1 {
