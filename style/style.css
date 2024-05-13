@@ -52,13 +52,13 @@ header {
 }
 .footer .grupo1 {
   width: 100%;
-  max-width: 1200px;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 50px;
   padding: 45px 0px;
 }
-.footer .grupo1 .box {
+.footer .grupo1 .box figure {
   width: 100%;
   height: 10vh;
   display: flex;
@@ -67,13 +67,11 @@ header {
   justify-content: center;
   gap: 10px;
 }
-.footer .grupo1 .box h2 {
-  color: rgba(253, 253, 211, 0.811);
+.footer .grupo1 .box figure img {
+  width: 250px;
 }
-.footer .grupo1 .box img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
+.footer .grupo1 h2 {
+  color: rgba(253, 253, 211, 0.811);
 }
 .footer .grupo1 .redes a {
   display: inline-block;
@@ -99,14 +97,6 @@ header {
   font-size: 15px;
 }
 
-@media screen and (max-width: 880px) {
-  .footer .grupo1 {
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 35px, 0px;
-  }
-}
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
