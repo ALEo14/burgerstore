@@ -27,9 +27,7 @@
 .img-box{
     img {
         display: block;
-        width: 100%;
-        height: 36rem;
-        object-fit: cover;
+        @include imagenes ( 100%, 36rem,cover);
     }
 } 
 .card-grid{
