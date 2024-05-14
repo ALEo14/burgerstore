@@ -15,7 +15,6 @@
 }
 
 
-
 //combos 
 
 
@@ -95,6 +94,7 @@
 .contenedor-pagos{
     padding: 2rem;
     @include flex(column, center, center,10px);
+    
     h2{
         font-size: 2rem;
         font-weight: 900;

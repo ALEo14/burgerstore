@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     padding: 10px;
     gap: 10px;
+    background-color: $bg-color;
 }
 .product{
     background-color: $second-color;

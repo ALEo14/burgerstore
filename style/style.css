@@ -111,6 +111,7 @@ footer .redes a i {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 10px;
   gap: 10px;
+  background-color: rgba(250, 242, 207, 0.799);
 }
 
 .product {
@@ -297,6 +298,7 @@ footer .redes a i {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  background-color: rgba(250, 242, 207, 0.799);
 }
 
 .mapa img {
@@ -307,6 +309,7 @@ footer .redes a i {
 
 .contacto {
   padding: 30px;
+  background-color: rgba(250, 242, 207, 0.799);
 }
 .contacto h2 {
   text-align: center;
