@@ -9,7 +9,7 @@ footer{
     
     .footer-content{
         @include flex(column , center , space-between ,0);
-        
+        padding-top : 50px;
         h3{
             font-size: 1.8rem;
             font-weight: 400;

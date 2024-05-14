@@ -1,14 +1,15 @@
 .hero{
-    background-image: linear-gradient(45deg,#000000be,#0000009f),url(../fotos/hero.png);
+    background-image: linear-gradient(45deg,#000000be,#0000009f),url(../../fotos/combo3.png);
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center, center;
-    @include flex(column,center, center,13px );
+    @include flex(column,flex-end, center,13px );
     h1{
         color: $font-color;
         text-decoration:underline;
         font-size: 2rem;
+        padding-right: 30px; 
         
     }
 }
@@ -70,6 +71,8 @@
         font-size: 2rem;
         font-weight: 600;
         text-transform: capitalize;
+        text-decoration: underline;
+        gap:5px;
     }
     p{
         font-size: 1rem;
@@ -78,6 +81,7 @@
         padding: 1.2rem;
     }
 }
+
 @media (max-width:1024px) {
     .card-grid{
         grid-template-columns: repeat(2,1fr);
@@ -88,3 +92,18 @@
             grid-template-columns: repeat(1,1fr);
         }
     }
+.contenedor-pagos{
+    padding: 2rem;
+    @include flex(column, center, center,10px);
+    h2{
+        font-size: 2rem;
+        font-weight: 900;
+        font-style:unset;
+        text-decoration: underline ;
+    }
+    .pagos{ 
+    background-color: $main-color;
+    padding: 2rem;
+    border: solid black;
+    gap: 2rem ;
+   }  }
