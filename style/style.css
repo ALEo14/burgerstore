@@ -87,22 +87,22 @@ footer .footer-content p {
   line-height: 28px;
   font-size: 14px;
 }
-footer .redes {
+footer .redes-footer {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0px;
 }
-footer .redes li {
+footer .redes-footer li {
   margin: 0 10px;
 }
-footer .redes a {
+footer .redes-footer a {
   text-decoration: none;
-  color: rgba(253, 253, 211, 0.811);
+  color: black;
 }
-footer .redes a i {
+footer .redes-footer a i {
   font-size: 1.1rem;
 }
 
